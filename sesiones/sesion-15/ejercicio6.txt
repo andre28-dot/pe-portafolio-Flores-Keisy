@@ -1,0 +1,12 @@
+No considero que sea buena idea cambiar todos los genericos por `any`, 
+aunque los dos permitan trabajar con diferentes tipos de datos, la diferencia
+ es que `any` deja que TypeScript acepte casi cualquier operacion sin revisar si 
+ realmente corresponde al dato que estamos utilizando, esto puede provocar errores 
+ que no notamos mientras escribimos el codigo, ademas se pierde la ayuda del autocompletado
+  del editor porque ya no se conoce con seguridad el tipo de dato,
+
+En cambio, los genericos permiten que una funcion trabaje con diferentes tipos,
+ pero sin perder la informacion de cada uno, asi TypeScript puede avisarnos cuando 
+ intentamos realizar una operacion que no corresponde, por eso considero que los genericos
+  son una mejor opcion, porque permiten reutilizar codigo y mantener un programa mas seguro
+   y ordenado

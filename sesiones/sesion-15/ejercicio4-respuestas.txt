@@ -1,0 +1,19 @@
+1. ¿En cual version TypeScript conserva informacion sobre el tipo?
+En la funcion generica, porque mantiene el tipo de dato que recibe y lo 
+devuelve sin cambiarlo.
+
+2. ¿En cul version podria pasar inadvertido un error?
+En la funcion que utiliza `any`, porque permite realizar operaciones sin 
+comprobar si son correctas para el tipo de dato.
+
+3. ¿Que ventajas ofrece el generico?
+Permite trabajar con diferentes tipos de datos sin perder su informacion. 
+Tambien ayuda a detectar errores y a reutilizar el codigo.
+
+4. ¿Las dos funciones devuelven el mismo valor durante la ejecucion?
+Si, ambas devuelven el mismo valor que reciben. La diferencia no esta en el 
+resultado, sino en la forma en que TypeScript revisa los tipos.
+
+5. Si ambas devuelven el mismo valor, ¿por que una alternativa es mas segura?
+Porque los genericos conservan el tipo de dato y permiten detectar operaciones 
+incorrectas antes de ejecutar el programa. En cambio, con `any` algunos errores pueden pasar inadvertidos.
